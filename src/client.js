@@ -41,6 +41,15 @@ const getClient = () => {
 	};
 };
 
+const cards = async () => {
+	try {
+		const client = getClient();
+		return client.getCards();
+	} catch ( err ) {
+		console.log( err );
+	}
+};
+
 const getCardsWithDates = async () => {
 	try {
 		const client = getClient();
@@ -70,5 +79,6 @@ const getCardsWithDates = async () => {
 };
 
 module.exports = {
+	cards,
 	getCardsWithDates
 };
