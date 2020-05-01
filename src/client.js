@@ -15,7 +15,7 @@ const getClient = () => {
 	const api = axios.create( {
 		baseURL,
 		auth,
-		headers: { 
+		headers: {
 			"Content-Type": "application/json",
 			"Accept": "application/json"
 		}
@@ -39,6 +39,15 @@ const getClient = () => {
 		getBoard,
 		getCards
 	};
+};
+
+const board = async() => {
+	try {
+		const client = getClient();
+		return client.getBoard();
+	} catch ( err ) {
+		console.log( err );
+	}
 };
 
 const cards = async () => {
@@ -79,6 +88,7 @@ const getCardsWithDates = async () => {
 };
 
 module.exports = {
+	board,
 	cards,
 	getCardsWithDates
 };
