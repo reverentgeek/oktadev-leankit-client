@@ -1,19 +1,19 @@
 {
-  "name": "oktadev-leankit-client",
-  "version": "1.2.1",
-  "description": "",
-  "main": "src/client.js",
-  "dependencies": {
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-reverentgeek": "^3.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
-  "license": "MIT"
+	"name": "oktadev-leankit-client",
+	"version": "1.2.2",
+	"description": "",
+	"main": "src/client.js",
+	"dependencies": {
+		"axios": "^0.26.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.12.0",
+		"eslint-config-reverentgeek": "^3.1.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
+	"license": "MIT"
 }
